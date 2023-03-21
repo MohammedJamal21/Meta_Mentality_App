@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meta_mentality_app/views/courses/course_screen.dart';
 
 void main() {
   runApp(const MetaMentalityApp());
@@ -15,7 +16,7 @@ class MetaMentalityApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Container(),
+      home: const CoursesScreen(),
     );
   }
 }
