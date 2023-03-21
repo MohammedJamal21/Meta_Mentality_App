@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MetaMentalityApp());
 }
 
 class MetaMentalityApp extends StatelessWidget {
@@ -11,9 +11,8 @@ class MetaMentalityApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Meta Mentality',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: Container(),
