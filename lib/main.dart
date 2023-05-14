@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meta_mentality_app/providers/modules.dart';
-import 'package:meta_mentality_app/views/courses/myapp.dart';
+import 'package:meta_mentality_app/views/courses/module_screen_2.dart';
 import 'package:provider/provider.dart';
+
+import 'views/courses/quiz_screen.dart';
 
 void main() {
   runApp(const MetaMentalityApp());
@@ -20,11 +22,7 @@ class MetaMentalityApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Builder(builder: (context) {
-          return const MyApp(
-            title: 'Hama',
-          );
-        }),
+        home: QuizScreen(),
       ),
     );
   }
