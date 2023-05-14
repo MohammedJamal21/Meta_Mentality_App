@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:meta_mentality_app/providers/modules.dart';
-import 'package:meta_mentality_app/views/courses/module_screen_2.dart';
 import 'package:provider/provider.dart';
 
 import 'views/courses/quiz_screen.dart';
@@ -18,11 +17,12 @@ class MetaMentalityApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => Modules(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Meta Mentality',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: QuizScreen(),
+        home: const QuizScreen(),
       ),
     );
   }
