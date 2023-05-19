@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meta_mentality_app/providers/modules.dart';
 import 'package:provider/provider.dart';
 
-import 'views/courses/quiz_screen.dart';
+import 'presentation/pages/quiz_screen.dart';
 
 void main() {
   runApp(const MetaMentalityApp());
