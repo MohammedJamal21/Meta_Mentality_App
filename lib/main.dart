@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meta_mentality_app/providers/modules.dart';
 import 'package:provider/provider.dart';
 
-import 'presentation/pages/quiz_screen.dart';
+import 'presentation/pages/login/login_screen.dart';
+
 
 void main() {
   runApp(const MetaMentalityApp());
@@ -22,8 +23,8 @@ class MetaMentalityApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const QuizScreen(),
+        home: const LoginScreen(),
       ),
     );
   }
-}
+}  
