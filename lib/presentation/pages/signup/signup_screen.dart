@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../widgets/buttons/meta_button.dart';
 import '../../../widgets/textfields/meta_text_field.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                'Log in',
+                'Sign up',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class LoginScreen extends StatelessWidget {
                 height: 10,
               ),
               const Text(
-                'Welcome back! Enter your details',
+                'Welcome back! Enter your details to create an account',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -45,27 +45,8 @@ class LoginScreen extends StatelessWidget {
               const MetaTextField(
                 labelText: 'Password',
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  TextButton(
-                    style: const ButtonStyle(
-                      padding: MaterialStatePropertyAll(
-                        EdgeInsets.zero,
-                      ),
-                      overlayColor: MaterialStatePropertyAll(
-                        Colors.transparent,
-                      ),
-                    ),
-                    onPressed: () {},
-                    child: const Text(
-                      'Forgot Password?',
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                ],
+              const SizedBox(
+                height: 10,
               ),
               MetaButton(
                 data: 'Continue',
@@ -78,5 +59,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
-
