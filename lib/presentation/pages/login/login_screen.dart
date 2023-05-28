@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../widgets/buttons/meta_button.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -48,49 +50,18 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {},
-                    child: const Text('Forgot Password?'),
+                    child: const Text(
+                      'Forgot Password?',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
                   ),
                 ],
               ),
-              SizedBox(
-                width: double.infinity,
-                height: 56,
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.green),
-                    overlayColor:
-                        MaterialStateProperty.all<Color>(Colors.lightGreen),
-                    // splashFactory: InkRipple.splashFactory,
-                    // overlayColor: MaterialStateProperty.resolveWith(
-                    //   (states) {
-                    //     return states.contains(MaterialState.pressed)
-                    //         ? Colors.red
-                    //         : null;
-                    //   },
-                    // ),
-                    // backgroundColor: const MaterialStatePropertyAll(
-                    //   Color(0xff303742),
-                    // ),
-                    // shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    //   RoundedRectangleBorder(
-                    //     borderRadius: BorderRadius.circular(8.0),
-                    //     side: const BorderSide(color: Colors.transparent),
-                    //   ),
-                    // ),
-                    // elevation: const MaterialStatePropertyAll(
-                    //   0,
-                    // ),
-                  ),
-                  onPressed: () {},
-                  child: const Text(
-                    'Continue',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
+              MetaButton(
+                data: 'Continue',
+                onPressed: () {},
               ),
             ],
           ),
@@ -137,3 +108,4 @@ class _MetaTextFieldState extends State<MetaTextField> {
     );
   }
 }
+
