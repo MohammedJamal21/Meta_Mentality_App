@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:meta_mentality_app/presentation/pages/signup/signup_screen.dart';
 import 'package:meta_mentality_app/providers/modules.dart';
 import 'package:provider/provider.dart';
+
+import 'presentation/pages/intro_screen_3.dart';
+
+
 
 
 
@@ -23,7 +26,7 @@ class MetaMentalityApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const SignupScreen(),
+        home: const IntroScreen3(),
       ),
     );
   }
